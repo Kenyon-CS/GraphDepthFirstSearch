@@ -4,7 +4,6 @@
 using namespace std;
 
 class Graph {
-    int numVertices;
     vector<list<int>> adjLists; // Vector of lists for adjacency lists
     vector<bool> visited;        // Vector to track visited vertices
 
