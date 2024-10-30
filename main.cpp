@@ -15,8 +15,8 @@ public:
     void resetVisited();  // Utility function to reset visited nodes
 };
 
-// Initialize graph with given number of vertices
-Graph::Graph(int vertices) : numVertices(vertices), adjLists(vertices), visited(vertices, false) {}
+// Initialize graph 
+Graph::Graph() : adjLists(vertices), visited(vertices, false) {}
 
 // Add an edge to the graph (for directed graphs)
 void Graph::addEdge(int src, int dest) {
@@ -43,7 +43,7 @@ void Graph::resetVisited() {
 
 // Main function to demonstrate DFS
 int main() {
-    Graph g(4);
+    Graph g();
     g.addEdge(0, 1);
     g.addEdge(0, 2);
     g.addEdge(1, 2);
