@@ -9,7 +9,7 @@ class Graph {
 
 public:
     // Constructor to initialize the graph
-    Graph(int vertices);
+    Graph();
     void addEdge(int src, int dest);
     void DFS(int vertex);
     void resetVisited();  // Utility function to reset visited nodes
